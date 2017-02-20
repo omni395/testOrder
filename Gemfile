@@ -41,6 +41,9 @@ group :development, :test do
 
   gem 'rspec-rails'
   gem 'capybara'
+  #gem 'selenium-webdriver'
+  gem 'cucumber'
+  gem 'database_cleaner'
   gem 'factory_girl_rails'
 end
 
@@ -54,7 +57,7 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data'
+#gem 'tzinfo-data'
 
 gem 'devise'
 gem 'cancan'

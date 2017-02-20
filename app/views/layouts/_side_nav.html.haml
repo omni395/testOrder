@@ -1,0 +1,10 @@
+%ul.nav.flex-sm-column#side_navigation
+  - if user_signed_in?
+    %li.nav-item
+      .nav-link
+        = link_to payments_path, class: 'btn btn-sm' do
+          %span.fa.fa-money
+          &nbsp
+          +
+          &nbsp
+          Платежи

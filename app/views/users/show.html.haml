@@ -1,0 +1,24 @@
+.row
+  .col
+    .well#user
+      %table.table
+        %tr
+          %th
+            User name:
+          %td
+            = @user.name
+        %tr
+          %th
+            Email:
+          %td
+            = @user.email
+        %tr
+          %th
+            User role:
+          %td
+            = @user.role.name
+        %tr
+          %th
+
+          %td{:align => 'right'}
+            = link_to "Edit user", edit_user_registration_path

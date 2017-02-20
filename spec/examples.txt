@@ -1,0 +1,5 @@
+example_id                                              | status | run_time        |
+------------------------------------------------------- | ------ | --------------- |
+./spec/controllers/dashboard_controller_spec.rb[1:1:1]  | passed | 0.12624 seconds |
+./spec/views/dashboard/index.html.haml_spec.rb[1:1:1:1] | passed | 1.54 seconds    |
+./spec/views/dashboard/index.html.haml_spec.rb[1:1:1:2] | passed | 0.14216 seconds |

@@ -1,0 +1,18 @@
+%h4
+  Edit #{resource_name.to_s.humanize}
+= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :name, required: true, autofocus: true
+    = f.input :email, required: true
+    = f.input :password, autocomplete: "off", hint: "Leave blank if you dont need to change password", required: false
+    = f.input :password_confirmation, required: false
+    = f.input :current_password, hint: "You need fill your current password to accept changes", required: true
+    = f.association :role, as: :radio_buttons
+    = f.button :submit, "Update"
+
+%br
+%h4 Delete account
+%p
+  Do you dislike? #{link_to "Delete account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
+= link_to "Back", :back
